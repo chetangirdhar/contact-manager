@@ -11,7 +11,7 @@ app.use(cors()); // allow frontend connection
 app.use(express.json()); // read JSON data
 
 // connect MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/contacts")
+mongoose.connect("mongodb+srv://admin:12345@cluster0.xxxx.mongodb.net/contacts")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
